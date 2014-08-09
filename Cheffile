@@ -2,6 +2,7 @@ site "http://community.opscode.com/api/v1"
 
 # Community cookbooks
 cookbook "apt", "2.4.0"
+cookbook 'mysql', '~> 5.3.6'
 cookbook 'database', '~> 2.2.0'
 cookbook 'user', '~> 0.3.0'
 cookbook "nginx", "2.7.2"

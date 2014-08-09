@@ -28,12 +28,13 @@ Vagrant.configure("2") do |config|
       chef.data_bags_path = "data_bags"
 
       chef.add_role "db"
-      chef.add_role "redis"
-      chef.add_role "rails"
+      # chef.add_role "redis"
+      # chef.add_role "rails"
     
       # You may also specify custom JSON attributes:
       chef.json = {
-                    
+                    mysql: {
+                      server_root_password: "rootpassword"                    }            
                   }
     end
   end
