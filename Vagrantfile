@@ -34,7 +34,8 @@ Vagrant.configure("2") do |config|
       # You may also specify custom JSON attributes:
       chef.json = {
                     mysql: {
-                      server_root_password: "rootpassword"                    }            
+                      server_root_password: "rootpassword"                    
+                    }            
                   }
     end
   end
