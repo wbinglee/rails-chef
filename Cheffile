@@ -1,0 +1,14 @@
+site "http://community.opscode.com/api/v1"
+
+# Community cookbooks
+cookbook "apt", "2.4.0"
+cookbook 'database', '~> 2.2.0'
+cookbook 'user', '~> 0.3.0'
+cookbook "nginx", "2.7.2"
+cookbook 'unicorn', '~> 2.0.0'
+cookbook "postfix", "3.2.0"
+cookbook "sudo", "2.6.0"
+cookbook 'rbenv', '~> 1.7.1'
+cookbook 'redisio', '~> 1.7.1'
+
+cookbook "rails", path: "vendor/cookbooks/rails"

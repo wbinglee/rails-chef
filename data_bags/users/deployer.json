@@ -1,0 +1,6 @@
+{
+  "id"        : "deployer",
+  "comment"   : "user for application",
+  "home"      : "/home/deployer",
+  "groups"    : ["sudo","admin", "www-data"]
+}
