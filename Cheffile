@@ -9,6 +9,7 @@ cookbook "nginx", "2.7.2"
 cookbook 'unicorn', '~> 2.0.0'
 cookbook "postfix", "3.2.0"
 cookbook "sudo", "2.6.0"
+cookbook 'ruby_build', '~> 0.8.0'
 cookbook 'rbenv', '~> 1.7.1'
 cookbook 'redisio', '~> 1.7.1'
 

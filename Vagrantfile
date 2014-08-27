@@ -29,12 +29,19 @@ Vagrant.configure("2") do |config|
 
       chef.add_role "db"
       chef.add_role "redis"
-      # chef.add_role "rails"
+      chef.add_role "rails"
     
       # You may also specify custom JSON attributes:
       chef.json = {
                     mysql: {
                       server_root_password: "rootpassword"                    
+                    },
+                    rails: {
+                      app: {
+                        name: "vagrant",
+                        domain_names: ["vagrant.dev"],
+                        deploy_path: "/var/data/rails"
+                      }
                     }            
                   }
     end
