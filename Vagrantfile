@@ -41,6 +41,11 @@ Vagrant.configure("2") do |config|
                         name: "vagrant",
                         domain_names: ["vagrant.dev"],
                         deploy_path: "/var/data/rails"
+                      },
+                      database: {
+                        name: "railsdb",
+                        user: "railsuser",
+                        password: "railspassword"
                       }
                     }            
                   }
